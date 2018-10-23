@@ -42,6 +42,32 @@ realtime_recognize_demo.cpp 和 kinect2grabber.cpp编译；
 #### Dependencies
 
 * PCL 1.8
+	
+	安装PCL 1.8之前，首先需要安装PCL自身的一些依赖库：
+	* boost
+	
+		```
+		sudo apt-get install libboost-all-dev
+		```
+	* Eigen 3.0
+	
+		```
+		sudo apt-get install libeigen3-dev
+		```
+	* Flann 1.7.1
+		
+		Flann项目主页：[http://www.cs.ubc.ca/research/flann/](#http://www.cs.ubc.ca/research/flann/)
+		Github地址：[https://github.com/mariusmuja/flann](#https://github.com/mariusmuja/flann)
+		
+		须采用编译安装：
+	
+		```
+	
+		```
+	* VTK 5.6
+	
+开始安装PCL1.8
+	
 ```
 sudo add-apt-repository ppa:v-launchpad-jochen-sprickerhof-de/pcl
 sudo apt-get update
@@ -51,9 +77,7 @@ sudo apt-get install libpcl-all
 
   [install ref: https://github.com/code-iai/iai_kinect2#install](#https://github.com/code-iai/iai_kinect2#install)
 * hdf5
-* flann
 * opencv-2.4.13
-* boost
 
 #### Compile
 ```
