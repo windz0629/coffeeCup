@@ -125,10 +125,14 @@ void saveFeaturesToPCD(std::vector<pcd_model> &models,
  */
 int main(int argc, char** argv)
 {
+    boost::filesystem::path base_model_dir;
     if (argc < 2)
     {
-      PCL_ERROR ("Need at least two parameters! Syntax is: %s [model_directory] [options]\n", argv[0]);
-      return (-1);
+      // PCL_ERROR ("Need at least two parameters! Syntax is: %s [model_directory] [options]\n", argv[0]);
+      // return (-1);
+      base_model_dir = "..//training_data//models";
+    } else {
+      base_model_dir = argv[1];
     }
 
     std::string extension (".pcd");

@@ -10,4 +10,4 @@ thresh=60
 # Get the closest K nearest neighbors
 k=12
 
-./nearest_neighbors -k $k -thresh $thresh $DATA
+build/nearest_neighbors -k $k -thresh $thresh $DATA

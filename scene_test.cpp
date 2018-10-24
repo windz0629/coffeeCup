@@ -222,7 +222,7 @@ int main(int argc, char** argv)
     vector<pcl::PointCloud<pcl::VFHSignature308> > features;
     std::string fileName;
     if(argc<2)
-        fileName="//home//wangy//develop//perception_ws//projects//build//coffeeCup//test_data//cup_test_sample.pcd";
+        fileName="..//test_data//cup_test_sample.pcd";
     else
         fileName=argv[1];
 
@@ -233,7 +233,7 @@ int main(int argc, char** argv)
     computeVFHFeatures(clusters,features);
 
     std::stringstream ss;
-    string path="//home//wangy//develop//perception_ws//projects//build//coffeeCup//test_data//";
+    string path="..//test_data//";
     for(int i=0;i<clusters.size();++i)
     {
         ss.clear();
