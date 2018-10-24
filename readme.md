@@ -1,6 +1,6 @@
 ## coffeeCup Demo
 
-coffeeCup是一个基于点云的马克杯识别的演示程序，能够从kinect v2传感器获取RGBD信息，并计算为点云数据，通过对点云数据的处理和分割，识别出马克杯对应的点云簇(point cloud cluster);
+coffeeCup是一个基于点云的马克杯识别的演示程序，能够从kinect v2传感器获取RGBD信息，并计算为点云数据，通过对点云数据的处理和分割，从一堆物体中识别出马克杯对应的点云簇(point cloud cluster);
 
 ### Setup
 硬件的setup包括点云采集传感器：kinect V2 （若采用其他深度摄像头，需要替换相关驱动和`kinect2grabber.cpp`采集程序）; 除了深度摄像头，还需要一个马克杯作为被测对象；
@@ -86,12 +86,20 @@ sudo make -j2 install
 ```
 * freenect2
 
-  参考:[ https://github.com/code-iai/iai_kinect2#install](#https://github.com/code-iai/iai_kinect2#install)
+  参考:[ https://github.com/code-iai/iai_kinect2#install](https://github.com/code-iai/iai_kinect2#install)
+  
 * hdf5
+	
+	参考：[https://www.hdfgroup.org/downloads/](https://www.hdfgroup.org/downloads/)
+	下载source code 完成编译安装
+	
 * opencv-2.4.13
+	
+	参考：[https://blog.csdn.net/u011557212/article/details/54706966?utm_source=itdadao&utm_medium=referral](https://blog.csdn.net/u011557212/article/details/54706966?utm_source=itdadao&utm_medium=referral)
 
 #### Compile
 ```
+git clone https://github.com/windz0629/coffeeCup.git
 cd coffeeCup
 mkdir build && cd build
 cmake ..
@@ -110,7 +118,7 @@ sh test.sh
 
 首先运行train.sh脚本训练数据，然后运行test.sh运行测试demo
 
-运行realtime_recoginze_demo：
+运行realtime\_recoginze\_demo：
 
 ```
 cd build
