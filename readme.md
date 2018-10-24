@@ -20,12 +20,12 @@ coffeeCup是一个基于点云的马克杯识别的演示程序，能够从kinec
   * kinect2grabber.cpp
 
 
-* get_train_samples -- 采集模型点云，采集的点云放在models文件夹中，源代码中可以定义模型的颜色过滤和命名格式，采集不同模型时需要修改；
-  * get_train_samples.cpp
+* get_training_samples -- 采集模型点云，采集的点云放在models文件夹中，源代码中可以定义模型的颜色过滤和命名格式，采集不同模型时需要修改；
+  * get_training_samples.cpp
   * kinect2grabber.cpp
 
 
-* prepare_data -- 数据准备的可执行文件, 主要完成训练数据加载、VFH特征计算、并将特征数据保存为pcd文件；在training_data的models文件夹中提供了3种模型点云，也可以用于训练，不必重新采集；
+* prepare_data -- 数据准备, 主要完成训练数据加载、VFH特征计算、并将特征数据保存为pcd文件；在training_data的models文件夹中提供了3种模型点云，也可以用于训练，不必重新采集；
   * prepare_data.cpp
 
 
@@ -49,7 +49,7 @@ coffeeCup是一个基于点云的马克杯识别的演示程序，能够从kinec
         * cup
         * stair
 
-    * coffee_cup
+    * coffee_cup 用于测试
 
 * **test_data** -- 测试数据
 
@@ -73,7 +73,7 @@ coffeeCup是一个基于点云的马克杯识别的演示程序，能够从kinec
 sudo apt-get install libboost-all-dev libeigen3-dev libflann-dev
 ```
 
-VTK的安装稍麻烦，请参考[https://blog.csdn.net/sinat_28752257/article/details/79169647?utm_source=blogkpcl7](#https://blog.csdn.net/sinat_28752257/article/details/79169647?utm_source=blogkpcl7)
+VTK的安装稍麻烦，请参考[https://blog.csdn.net/sinat_28752257/article/details/79169647?utm_source=blogkpcl7](https://blog.csdn.net/sinat_28752257/article/details/79169647?utm_source=blogkpcl7)
 
 开始安装PCL1.8
 
